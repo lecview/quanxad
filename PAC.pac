@@ -14,8 +14,8 @@ var FindProxyForURL = function(init, profiles) {
 var direct = "__DIRECT__";
 if (direct == "__DIR" + "ECT__") direct = "DIRECT;";
 
-var wall_proxy = function(){ return "SOCKS5 127.0.0.1:51837; SOCKS 127.0.0.1:51837; PROXY 127.0.0.1:58591"; };
-var wall_v6_proxy = function(){ return "SOCKS5 127.0.0.1:51837; SOCKS 127.0.0.1:51837; PROXY 127.0.0.1:58591"; };
+var wall_proxy = function(){ return "SOCKS5 127.0.0.1:50000; SOCKS 127.0.0.1:50000; PROXY 127.0.0.1:50000"; };
+var wall_v6_proxy = function(){ return "SOCKS5 127.0.0.1:50000; SOCKS 127.0.0.1:50000; PROXY 127.0.0.1:50000"; };
 
 var nowall_proxy = function(){ return direct; };
 var ip_proxy = function(){ return nowall_proxy(); };
